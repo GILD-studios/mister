@@ -1,2 +1,3 @@
 # Mister
-Football team maker, Android mobile application
+
+Balanced football teams maker in n-a-side football pitches.
