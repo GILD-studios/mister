@@ -1,3 +1,3 @@
 # Mister
 
-Balanced football teams maker in n-a-side football pitches.
+Balanced football teams maker Android app for n-a-side football pitches.
