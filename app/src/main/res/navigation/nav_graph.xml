@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/nav_graph"
+
+    app:startDestination="@id/fragmentPicker">
+
+    <fragment
+        android:id="@+id/fragmentPicker"
+        android:name="com.gildstudios.mister.fragments.PickerFragment"
+        android:label="@string/picker_fragment_label"
+        tools:layout="@layout/fragment_picker">
+
+        <action
+            android:id="@+id/action_PickerFragment_to_FootballPitchFragment"
+            app:destination="@id/fragmentFootballPitch"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFootballPitch"
+        android:name="com.gildstudios.mister.fragments.FootballPitchFragment"
+        android:label="@string/football_pitch_fragment_label"
+        tools:layout="@layout/fragment_football_pitch">
+
+        <action
+            android:id="@+id/action_FootballPitchFragment_to_PickerFragment"
+            app:destination="@id/fragmentPicker"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+</navigation>

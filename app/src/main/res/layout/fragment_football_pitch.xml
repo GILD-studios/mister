@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/footballpitch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_midPitch"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--
+        Blue team players UI
+        -->
+
+        <ImageView
+            android:id="@+id/ivPlayer_0_0"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_0"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_0"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_0"
+            app:srcCompat="@drawable/tshirtblue" />
+
+        <TextView
+            android:id="@+id/tvPlayer_0_0"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="48dp"
+            android:text="Player #0-0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRating_0_0"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_0"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_0"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_0"/>
+
+        <ImageView
+            android:id="@+id/ivPlayer_0_1"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_1"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_1"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_1"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_1"
+            app:srcCompat="@drawable/tshirtblue" />
+
+        <TextView
+            android:id="@+id/tvPlayer_0_1"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="36dp"
+            android:text="Player #0-1"
+            app:layout_constraintEnd_toStartOf="@+id/tvPlayer_0_2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlayer_0_0" />
+
+        <TextView
+            android:id="@+id/tvRating_0_1"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_1"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_1"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_1"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_1" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_0_2"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_2"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_2"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_2"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_2"
+            app:srcCompat="@drawable/tshirtblue" />
+
+        <TextView
+            android:id="@+id/tvPlayer_0_2"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="36dp"
+            android:text="Player #0-2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvPlayer_0_1"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlayer_0_0" />
+
+        <TextView
+            android:id="@+id/tvRating_0_2"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_2"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_2"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_2"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_2" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_0_3"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_3"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_3"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_3"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_3"
+            app:srcCompat="@drawable/tshirtblue" />
+
+        <TextView
+            android:id="@+id/tvPlayer_0_3"
+            style="@style/tvPlayerInfo"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="63dp"
+            android:text="Player #0-3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlayer_0_1" />
+
+        <TextView
+            android:id="@+id/tvRating_0_3"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_3"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_3"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_3" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_0_4"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_4"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_4"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_4"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_4"
+            app:layout_constraintVertical_bias="0.411"
+            app:srcCompat="@drawable/tshirtblue" />
+
+        <TextView
+            android:id="@+id/tvPlayer_0_4"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="16dp"
+            android:text="Player #0-4"
+            app:layout_constraintBottom_toTopOf="@+id/cardView_midPitch"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_0"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlayer_0_3" />
+
+        <TextView
+            android:id="@+id/tvRating_0_4"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_4"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_4"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_4"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_4" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_0_5"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_5"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_5"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_5"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_5"
+            app:srcCompat="@drawable/tshirtblue" />
+
+        <TextView
+            android:id="@+id/tvPlayer_0_5"
+            style="@style/tvPlayerInfo"
+            android:layout_marginEnd="36dp"
+            android:text="Player #0-5"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_3" />
+
+        <TextView
+            android:id="@+id/tvRating_0_5"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_5"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_5"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_5"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_5" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_0_6"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_6"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_6"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_6"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_6"
+            app:srcCompat="@drawable/tshirtblue" />
+
+        <TextView
+            android:id="@+id/tvPlayer_0_6"
+            style="@style/tvPlayerInfo"
+            android:text="Player #0-6"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_3"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_0"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_3" />
+
+        <TextView
+            android:id="@+id/tvRating_0_6"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_6"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_6"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_6"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_6" />
+
+        <!--
+        Black team players UI
+        -->
+
+        <ImageView
+            android:id="@+id/ivPlayer_1_0"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_0"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_0"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_0"
+            app:srcCompat="@drawable/tshirtblack" />
+
+        <TextView
+            android:id="@+id/tvPlayer_1_0"
+            style="@style/tvPlayerInfo"
+            android:layout_marginBottom="48dp"
+            android:text="Player #1-0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRating_1_0"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_0"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_0"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_0" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_1_1"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_1"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_1"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_1"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_1"
+            app:srcCompat="@drawable/tshirtblack" />
+
+        <TextView
+            android:id="@+id/tvPlayer_1_1"
+            style="@style/tvPlayerInfo"
+            android:layout_marginBottom="36dp"
+            android:text="Player #1-1"
+            app:layout_constraintBottom_toTopOf="@+id/tvPlayer_1_0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvPlayer_1_2" />
+
+        <TextView
+            android:id="@+id/tvRating_1_1"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_1"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_1"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_1"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_1" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_1_2"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_2"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_2"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_2"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_2"
+            app:srcCompat="@drawable/tshirtblack" />
+
+        <TextView
+            android:id="@+id/tvPlayer_1_2"
+            style="@style/tvPlayerInfo"
+            android:layout_marginBottom="36dp"
+            android:text="Player #1-2"
+            app:layout_constraintBottom_toTopOf="@+id/tvPlayer_1_0"
+            app:layout_constraintEnd_toStartOf="@+id/tvPlayer_1_1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRating_1_2"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_2"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_2"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_2"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_2" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_1_3"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_3"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_3"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_3"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_3"
+            app:srcCompat="@drawable/tshirtblack" />
+
+        <TextView
+            android:id="@+id/tvPlayer_1_3"
+            style="@style/tvPlayerInfo"
+            android:layout_marginEnd="36dp"
+            android:text="Player #1-3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_5" />
+
+        <TextView
+            android:id="@+id/tvRating_1_3"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_3"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_3"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_3"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_3" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_1_4"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_4"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_4"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_4"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_4"
+            app:srcCompat="@drawable/tshirtblack" />
+
+        <TextView
+            android:id="@+id/tvPlayer_1_4"
+            style="@style/tvPlayerInfo"
+            android:layout_marginBottom="24dp"
+            android:text="Player #1-4"
+            app:layout_constraintBottom_toTopOf="@+id/tvPlayer_1_5"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_0"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_midPitch" />
+
+        <TextView
+            android:id="@+id/tvRating_1_4"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_4"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_4"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_4"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_4" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_1_5"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_5"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_5"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_5"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_5"
+            app:srcCompat="@drawable/tshirtblack" />
+
+        <TextView
+            android:id="@+id/tvPlayer_1_5"
+            style="@style/tvPlayerInfo"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="64dp"
+            android:text="Player #1-5"
+            app:layout_constraintBottom_toTopOf="@+id/tvPlayer_1_2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvRating_1_5"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_5"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_5"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_5"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_5" />
+
+        <ImageView
+            android:id="@+id/ivPlayer_1_6"
+            style="@style/ivPlayerInfo"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_6"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_6"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_6"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_6"
+            app:srcCompat="@drawable/tshirtblack" />
+
+        <TextView
+            android:id="@+id/tvPlayer_1_6"
+            style="@style/tvPlayerInfo"
+            android:text="Player #1-6"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_5"
+            app:layout_constraintEnd_toStartOf="@+id/tvPlayer_1_3"
+            app:layout_constraintStart_toEndOf="@+id/tvPlayer_1_5"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_5" />
+
+        <TextView
+            android:id="@+id/tvRating_1_6"
+            style="@style/tvPlayerInfo"
+            android:layout_marginTop="32dp"
+            android:text="50"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_6"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_6"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_6"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

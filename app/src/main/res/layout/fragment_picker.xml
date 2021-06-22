@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWelcomeMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/picker_welcome_msg"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFormationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:visibility="gone"
+        android:text="Formazione"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/tv2ndTeam"
+        app:layout_constraintStart_toEndOf="@+id/tv1stTeam"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcomeMsg" />
+
+    <Spinner
+        android:id="@+id/spinnerFormations"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/tvRoleLabel_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFormationLabel" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_midPitch"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pbarCreateTeams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivRole_0_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_0_3"
+        app:layout_constraintStart_toEndOf="@+id/etPlayer_0_3"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_0_3" />
+
+    <ImageView
+        android:id="@+id/ivRole_0_4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_0_4"
+        app:layout_constraintStart_toEndOf="@+id/etPlayer_0_4"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_0_4" />
+
+    <ImageView
+        android:id="@+id/ivRole_0_5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_0_5"
+        app:layout_constraintStart_toEndOf="@+id/etPlayer_0_5"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_0_5" />
+
+    <ImageView
+        android:id="@+id/ivRole_0_6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_0_6"
+        app:layout_constraintStart_toEndOf="@+id/etPlayer_0_6"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_0_6" />
+
+    <TextView
+        android:id="@+id/tv2ndTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Squadra 2"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcomeMsg" />
+
+    <Button
+        android:id="@+id/btnCreateTeams"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/gradientbutton"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="@android:color/black"
+        android:shadowRadius="0"
+        android:text="Crea le Squadre"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgroupTeamSize" />
+
+    <EditText
+        android:id="@+id/etPlayer_0_0"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Pietro 64"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerLabel_0" />
+
+    <EditText
+        android:id="@+id/etPlayer_1_0"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Marco 75"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlayerLabel_1" />
+
+    <EditText
+        android:id="@+id/etPlayer_1_1"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Ciccio 54"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_1_0" />
+
+    <EditText
+        android:id="@+id/etPlayer_1_2"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Cristian 38"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_1_1" />
+
+    <EditText
+        android:id="@+id/etPlayer_1_3"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Jack 75"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_1_2" />
+
+    <EditText
+        android:id="@+id/etPlayer_1_4"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Alex 36"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_1_3" />
+
+    <EditText
+        android:id="@+id/etPlayer_1_5"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Leo 86"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_1_4" />
+
+    <EditText
+        android:id="@+id/etPlayer_1_6"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="eg. Vittorio 50"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_1_5" />
+
+    <EditText
+        android:id="@+id/etPlayer_0_3"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Gian 90"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_0_2" />
+
+    <EditText
+        android:id="@+id/etPlayer_0_4"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="eg. Paolo 88"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_0_3" />
+
+    <EditText
+        android:id="@+id/etPlayer_0_5"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="eg. Roberto 46"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_0_4" />
+
+    <EditText
+        android:id="@+id/etPlayer_0_6"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="eg. Andrea 26"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_0_5" />
+
+    <EditText
+        android:id="@+id/etPlayer_0_2"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="eg. Daniele 86"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_0_1" />
+
+    <EditText
+        android:id="@+id/etPlayer_0_1"
+        android:layout_width="130dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="eg. Federico 30"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_0_0" />
+
+    <TextView
+        android:id="@+id/tv1stTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Squadra 1"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcomeMsg" />
+
+    <ImageView
+        android:id="@+id/ivRole_0_0"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_0_0"
+        app:layout_constraintEnd_toStartOf="@+id/ivRole_1_0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etPlayer_0_0"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_0_0"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <ImageView
+        android:id="@+id/ivRole_1_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_1_1"
+        app:layout_constraintEnd_toStartOf="@+id/etPlayer_1_1"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_1_1" />
+
+    <ImageView
+        android:id="@+id/ivRole_1_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_1_2"
+        app:layout_constraintEnd_toStartOf="@+id/etPlayer_1_2"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_1_2" />
+
+    <ImageView
+        android:id="@+id/ivRole_1_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_1_3"
+        app:layout_constraintEnd_toStartOf="@+id/etPlayer_1_3"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_1_3" />
+
+    <ImageView
+        android:id="@+id/ivRole_1_4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_1_4"
+        app:layout_constraintEnd_toStartOf="@+id/etPlayer_1_4"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_1_4" />
+
+    <ImageView
+        android:id="@+id/ivRole_1_5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_1_5"
+        app:layout_constraintEnd_toStartOf="@+id/etPlayer_1_5"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_1_5" />
+
+    <ImageView
+        android:id="@+id/ivRole_1_6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_1_6"
+        app:layout_constraintEnd_toStartOf="@+id/etPlayer_1_6"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_1_6" />
+
+    <ImageView
+        android:id="@+id/ivRole_1_0"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_1_0"
+        app:layout_constraintEnd_toStartOf="@+id/etPlayer_1_0"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_1_0" />
+
+    <ImageView
+        android:id="@+id/ivRole_0_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_0_1"
+        app:layout_constraintStart_toEndOf="@+id/etPlayer_0_1"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_0_1" />
+
+    <ImageView
+        android:id="@+id/ivRole_0_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/c"
+        app:layout_constraintBottom_toBottomOf="@+id/etPlayer_0_2"
+        app:layout_constraintStart_toEndOf="@+id/etPlayer_0_2"
+        app:layout_constraintTop_toTopOf="@+id/etPlayer_0_2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rgroupTeamSize"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer_0_6">
+
+        <RadioButton
+            android:id="@+id/rbtnTeamSize_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Calcio a 5"
+            android:fontFamily="sans-serif-condensed"
+
+            app:layout_constraintEnd_toStartOf="@+id/rbtnTeamSize_6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rbtnTeamSize_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Calcio a 6"
+            android:fontFamily="sans-serif-condensed"
+
+            app:layout_constraintEnd_toStartOf="@+id/rbtnTeamSize_7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rbtnTeamSize_5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rbtnTeamSize_7"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcio a 7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rbtnTeamSize_6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvRoleLabel_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Ruolo"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlayerLabel_0"
+        app:layout_constraintEnd_toStartOf="@+id/cardView_midPitch"
+        app:layout_constraintStart_toStartOf="@+id/ivRole_0_0"
+        app:layout_constraintTop_toTopOf="@+id/tvPlayerLabel_0" />
+
+    <TextView
+        android:id="@+id/tvRoleLabel_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Ruolo"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlayerLabel_1"
+        app:layout_constraintEnd_toEndOf="@+id/ivRole_1_0"
+        app:layout_constraintStart_toEndOf="@+id/cardView_midPitch"
+        app:layout_constraintTop_toTopOf="@+id/tvPlayerLabel_1" />
+
+    <TextView
+        android:id="@+id/tvPlayerLabel_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Nome Valore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1stTeam" />
+
+    <TextView
+        android:id="@+id/tvPlayerLabel_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Nome Valore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2ndTeam" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

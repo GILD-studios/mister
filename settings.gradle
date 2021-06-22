@@ -1,0 +1,4 @@
+include ':app'
+
+// Root package name
+rootProject.name = "Mister"

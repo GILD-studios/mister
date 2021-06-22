@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.gildstudios.mister.activities.MainActivity">
+
+    <item
+        android:id="@+id/no_action_balance"
+        android:orderInCategory="100"
+        android:title="@string/no_action_balance"
+        android:checkable="false"
+        android:visible="false"
+        android:enabled="false"
+        app:showAsAction="always" />
+
+</menu>
