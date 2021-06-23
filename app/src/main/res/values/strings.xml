@@ -13,7 +13,7 @@
     <string name="previous">Previous</string>
 
     <!-- Picker fragment -->
-    <string name="picker_welcome_msg">Ehi Mister! Scegli la formazione e il campo. Attribuisci un nome univoco ai tuoi giocatori seguito da un valore di abilità da 0 a 100, dopodichè puoi modificare il ruolo di ognuno di loro toccandolo. Ti aiuterò a formare due squadre equilibrate!</string>
+    <string name="picker_welcome_msg">Ehi Mister! Scegli la formazione e il campo. Inserisci il nome dei tuoi giocatori seguito da un valore di abilità da 0 a 100, dopodichè puoi modificare il ruolo di ognuno di loro toccandolo. Ti aiuterò a formare due squadre equilibrate!</string>
 
     <string-array name="formations">
         <item>2–2–1</item>
