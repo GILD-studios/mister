@@ -4,6 +4,8 @@
     <!-- Menu items labels -->
     <string name="action_settings">Settings</string>
     <string name="no_action_balance">Equilibrio: %.1f%%</string>
+    <string name="action_show_rating">Mostra i valori</string>
+    <string name="action_hide_rating">Nascondi i valori</string>
 
     <!-- Labels used for navigation -->
     <string name="picker_fragment_label">Picker fragment</string>
@@ -13,7 +15,9 @@
     <string name="previous">Previous</string>
 
     <!-- Picker fragment -->
-    <string name="picker_welcome_msg">Ehi Mister! Scegli la formazione e il campo. Inserisci il nome dei tuoi giocatori seguito da un valore di abilità da 0 a 100, dopodichè puoi modificare il ruolo di ognuno di loro toccandolo. Ti aiuterò a formare due squadre equilibrate!</string>
+    <string name="picker_welcome_msg">Ehi Mister! Seleziona la dimensione del campo. Inserisci il nome dei tuoi giocatori seguito da un valore di abilità da 0 a 50, dopodichè puoi modificare il ruolo di ognuno di loro toccandolo. Ti aiuterò a formare due squadre equilibrate!</string>
+    <string name="action_share">Condividi…</string>
+    <string name="send_to">Condividi con…</string>
 
     <string-array name="formations">
         <item>2–2–1</item>

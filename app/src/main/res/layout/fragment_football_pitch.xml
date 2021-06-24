@@ -160,24 +160,23 @@
             app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_4"
             app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_4"
             app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_4"
-            app:layout_constraintVertical_bias="0.411"
             app:srcCompat="@drawable/tshirtblue" />
 
         <TextView
             android:id="@+id/tvPlayer_0_4"
             style="@style/tvPlayerInfo"
-            android:layout_marginTop="16dp"
+            android:layout_marginEnd="36dp"
             android:text="Player #0-4"
-            app:layout_constraintBottom_toTopOf="@+id/cardView_midPitch"
-            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_0"
-            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_0"
-            app:layout_constraintTop_toBottomOf="@+id/tvPlayer_0_3" />
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_3" />
 
         <TextView
             android:id="@+id/tvRating_0_4"
             style="@style/tvPlayerInfo"
             android:layout_marginTop="32dp"
             android:text="50"
+            android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_4"
             app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_4"
             app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_4"
@@ -190,23 +189,24 @@
             app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_5"
             app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_5"
             app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_5"
+            app:layout_constraintVertical_bias="0.411"
             app:srcCompat="@drawable/tshirtblue" />
 
         <TextView
             android:id="@+id/tvPlayer_0_5"
             style="@style/tvPlayerInfo"
-            android:layout_marginEnd="36dp"
+            android:layout_marginTop="16dp"
             android:text="Player #0-5"
-            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tvPlayer_0_3" />
+            app:layout_constraintBottom_toTopOf="@+id/cardView_midPitch"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_0"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlayer_0_3" />
 
         <TextView
             android:id="@+id/tvRating_0_5"
             style="@style/tvPlayerInfo"
             android:layout_marginTop="32dp"
             android:text="50"
-            android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="@+id/tvPlayer_0_5"
             app:layout_constraintStart_toStartOf="@+id/tvPlayer_0_5"
             app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_0_5"
@@ -345,9 +345,9 @@
             style="@style/tvPlayerInfo"
             android:layout_marginEnd="36dp"
             android:text="Player #1-3"
-            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_5"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_5" />
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_4" />
 
         <TextView
             android:id="@+id/tvRating_1_3"
@@ -371,12 +371,11 @@
         <TextView
             android:id="@+id/tvPlayer_1_4"
             style="@style/tvPlayerInfo"
-            android:layout_marginBottom="24dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginBottom="64dp"
             android:text="Player #1-4"
-            app:layout_constraintBottom_toTopOf="@+id/tvPlayer_1_5"
-            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_0"
-            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_0"
-            app:layout_constraintTop_toBottomOf="@+id/cardView_midPitch" />
+            app:layout_constraintBottom_toTopOf="@+id/tvPlayer_1_2"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/tvRating_1_4"
@@ -400,11 +399,12 @@
         <TextView
             android:id="@+id/tvPlayer_1_5"
             style="@style/tvPlayerInfo"
-            android:layout_marginStart="36dp"
-            android:layout_marginBottom="64dp"
+            android:layout_marginBottom="24dp"
             android:text="Player #1-5"
-            app:layout_constraintBottom_toTopOf="@+id/tvPlayer_1_2"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/tvPlayer_1_4"
+            app:layout_constraintEnd_toEndOf="@+id/tvPlayer_1_0"
+            app:layout_constraintStart_toStartOf="@+id/tvPlayer_1_0"
+            app:layout_constraintTop_toBottomOf="@+id/cardView_midPitch" />
 
         <TextView
             android:id="@+id/tvRating_1_5"
@@ -429,10 +429,10 @@
             android:id="@+id/tvPlayer_1_6"
             style="@style/tvPlayerInfo"
             android:text="Player #1-6"
-            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_5"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlayer_1_4"
             app:layout_constraintEnd_toStartOf="@+id/tvPlayer_1_3"
-            app:layout_constraintStart_toEndOf="@+id/tvPlayer_1_5"
-            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_5" />
+            app:layout_constraintStart_toEndOf="@+id/tvPlayer_1_4"
+            app:layout_constraintTop_toTopOf="@+id/tvPlayer_1_4" />
 
         <TextView
             android:id="@+id/tvRating_1_6"

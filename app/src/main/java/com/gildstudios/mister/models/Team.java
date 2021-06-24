@@ -1,5 +1,6 @@
 package com.gildstudios.mister.models;
 
+
 import com.gildstudios.mister.enums.Position;
 
 import org.json.JSONArray;
@@ -24,6 +25,10 @@ public class Team {
     }
 
     public static ArrayList<Team> fromJson(JSONArray teamsArray) {
+        return fromJson(teamsArray, 1.0);
+    }
+
+    public static ArrayList<Team> fromJson(JSONArray teamsArray, double alpha) {
         ArrayList<Team> teams = new ArrayList<>();
 
         try {
@@ -39,7 +44,8 @@ public class Team {
                     JSONObject playerObj = playersArray.getJSONObject(j);
 
                     String name = playerObj.getString("name");
-                    int rating  = playerObj.getInt("rating");
+                    int rating  = (int) Math.round(playerObj
+                            .getInt("rating") / alpha);
                     Position position = Position.valueOf(playerObj
                             .getString("position"));
 
@@ -50,7 +56,6 @@ public class Team {
 
                 teams.add(team);
             }
-
             return teams;
         } catch (JSONException e) {
             return null;

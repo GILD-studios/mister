@@ -1,5 +1,6 @@
 package com.gildstudios.mister.activities;
 
+
 import android.os.Bundle;
 
 import com.gildstudios.mister.R;
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,5 +1,6 @@
 package com.gildstudios.mister.fragments;
 
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -40,14 +41,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import static com.gildstudios.mister.utils.Generics.RATING_maxApi;
 import static com.gildstudios.mister.utils.Generics.capitalize;
+
 
 public class PickerFragment extends AwareFragment {
 
-    private final static int RATING_max = 100;
-    private final static int RATING_min = 0;
+    private final int RATING_max = 50;
+    private final int RATING_min = 0;
 
-    private int N;
+    private final double alpha = (1.0*RATING_maxApi) / RATING_max;
+
+    private int n;
 
     private final static String TAG = PickerFragment.class.getSimpleName();
 
@@ -281,12 +286,12 @@ public class PickerFragment extends AwareFragment {
                                 ArrayList::new));
     }
 
-    private void updateUI(int _N) {
-        N = _N;
+    private void updateUI(int _n) {
+        n = _n;
 
-        if (N == 5) {
+        if (n == 5) {
             updateUI_pitch5();
-        } else if (N == 6) {
+        } else if (n == 6) {
             updateUI_pitch6();
         } else {
             updateUI_pitch7();
@@ -355,9 +360,9 @@ public class PickerFragment extends AwareFragment {
     private Pair<Boolean, int[]> validInput() {
         int[] goneIdxs;
 
-        if (N == 5) {
+        if (n == 5) {
             goneIdxs = new int[]{5, 6, 12, 13};
-        } else if (N == 6) {
+        } else if (n == 6) {
             goneIdxs = new int[]{6, 13};
         } else {
             goneIdxs = new int[]{};
@@ -410,7 +415,7 @@ public class PickerFragment extends AwareFragment {
             }
 
             mPlayers.get(i).name   = name;
-            mPlayers.get(i).rating = rating;
+            mPlayers.get(i).rating = (int) Math.round(rating*alpha);
         }
 
         int nTeams = 2;
@@ -420,25 +425,26 @@ public class PickerFragment extends AwareFragment {
 
         List<Player> visiblePlayers = filterPlayers(visibleIdxs);
 
-        makeApiRequest(visiblePlayers, N,
+        makeApiRequest(visiblePlayers, n,
                        formation, nTeams);
     }
 
-    private void makeApiRequest(List<Player> players, int N,
+    private void makeApiRequest(List<Player> players, int n,
                                 String formation, int nTeams) {
         JSONObject jsonBody = new JSONObject();
 
         try {
+//            // Make chars UTF-8 compliant
+//            jsonBody.put("formation", formation
+//                    .replaceAll("\\p{Pd}", "-"));
+
+            jsonBody.put("n", n);
+            jsonBody.put("nteams", nTeams);
+            jsonBody.put("optimal", "False");
+
             // Serialize all the players as JSON
             jsonBody.put("players", new JSONArray(
                     (new Gson()).toJson(players)));
-
-            jsonBody.put("n", N);
-            jsonBody.put("nteams", nTeams);
-
-            // Make chars UTF-8 compliant
-            jsonBody.put("formation", formation
-                    .replaceAll("\\p{Pd}", "-"));
         } catch (JSONException e) {
             showUnknownError();
             enableUX();
@@ -456,7 +462,8 @@ public class PickerFragment extends AwareFragment {
 
                             Bundle bundle = new Bundle();
 
-                            bundle.putInt("N", N);
+                            bundle.putInt("n", n);
+                            bundle.putDouble("alpha", alpha);
                             bundle.putDouble("balance", balance);
                             bundle.putString("teams", teams.toString());
 

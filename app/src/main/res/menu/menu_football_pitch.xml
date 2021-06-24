@@ -11,6 +11,27 @@
         android:checkable="false"
         android:visible="false"
         android:enabled="false"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="101"
+        android:title="@string/action_share"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_show_rating"
+        android:orderInCategory="102"
+        android:title="@string/action_show_rating"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_hide_rating"
+        android:orderInCategory="103"
+        android:title="@string/action_hide_rating"
+        android:visible="true"
+        app:showAsAction="never" />
 
 </menu>
