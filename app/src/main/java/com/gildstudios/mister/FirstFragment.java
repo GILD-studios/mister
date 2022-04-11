@@ -466,25 +466,118 @@ public class FirstFragment extends Fragment {
                     }
 
 
-                    playerList.add(new Player(p1[0], Integer.parseInt(p1[1]), c1));
-                    playerList.add(new Player(p2[0], Integer.parseInt(p2[1]), c2));
-                    playerList.add(new Player(p3[0], Integer.parseInt(p3[1]), c3));
-                    playerList.add(new Player(p4[0], Integer.parseInt(p4[1]), c4));
-                    playerList.add(new Player(p5[0], Integer.parseInt(p5[1]), c5));
-                    playerList.add(new Player(p6[0], Integer.parseInt(p6[1]), c6));
-                    playerList.add(new Player(p7[0], Integer.parseInt(p7[1]), c7));
-                    playerList.add(new Player(p8[0], Integer.parseInt(p8[1]), c8));
-                    playerList.add(new Player(p9[0], Integer.parseInt(p9[1]), c9));
-                    playerList.add(new Player(p10[0], Integer.parseInt(p10[1]), c10));
+                    try {
+                        playerList.add(new Player(p1[0], Integer.parseInt(p1[1]), c1));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p1[0] + ' ' + p1[1], Integer.parseInt(p1[2]), c1));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p2[0], Integer.parseInt(p2[1]), c2));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p2[0] + ' ' + p2[1], Integer.parseInt(p2[2]), c2));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p3[0], Integer.parseInt(p3[1]), c3));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p3[0] + ' ' + p3[1], Integer.parseInt(p3[2]), c3));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p4[0], Integer.parseInt(p4[1]), c4));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p4[0] + ' ' + p4[1], Integer.parseInt(p4[2]), c4));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p5[0], Integer.parseInt(p5[1]), c5));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p5[0] + ' ' + p5[1], Integer.parseInt(p5[2]), c5));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p6[0], Integer.parseInt(p6[1]), c6));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p6[0] + ' ' + p6[1], Integer.parseInt(p6[2]), c6));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p7[0], Integer.parseInt(p7[1]), c7));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p7[0] + ' ' + p7[1], Integer.parseInt(p7[2]), c7));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p8[0], Integer.parseInt(p8[1]), c8));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p8[0] + ' ' + p8[1], Integer.parseInt(p8[2]), c8));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p9[0], Integer.parseInt(p9[1]), c9));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p9[0] + ' ' + p9[1], Integer.parseInt(p9[2]), c9));
+                        e.printStackTrace();
+                    }
+
+                    try {
+                        playerList.add(new Player(p10[0], Integer.parseInt(p10[1]), c10));
+                    } catch (NumberFormatException e) {
+                        playerList.add(new Player(p10[0] + ' ' + p10[1], Integer.parseInt(p10[2]), c10));
+                        e.printStackTrace();
+                    }
                     if (calcio6.isChecked()) {
-                        playerList.add(new Player(p11[0], Integer.parseInt(p11[1]), c11));
-                        playerList.add(new Player(p12[0], Integer.parseInt(p12[1]), c12));
+                        try {
+                            playerList.add(new Player(p11[0], Integer.parseInt(p11[1]), c11));
+                        } catch (NumberFormatException e) {
+                            playerList.add(new Player(p11[0] + ' ' + p11[1], Integer.parseInt(p11[2]), c11));
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            playerList.add(new Player(p12[0], Integer.parseInt(p12[1]), c12));
+                        } catch (NumberFormatException e) {
+                            playerList.add(new Player(p12[0] + ' ' + p12[1], Integer.parseInt(p12[2]), c12));
+                            e.printStackTrace();
+                        }
                     }
                     if (calcio7.isChecked()) {
-                        playerList.add(new Player(p11[0], Integer.parseInt(p11[1]), c11));
-                        playerList.add(new Player(p12[0], Integer.parseInt(p12[1]), c12));
-                        playerList.add(new Player(p13[0], Integer.parseInt(p13[1]), c13));
-                        playerList.add(new Player(p14[0], Integer.parseInt(p14[1]), c14));
+                        try {
+                            playerList.add(new Player(p11[0], Integer.parseInt(p11[1]), c11));
+                        } catch (NumberFormatException e) {
+                            playerList.add(new Player(p11[0] + ' ' + p11[1], Integer.parseInt(p11[2]), c11));
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            playerList.add(new Player(p12[0], Integer.parseInt(p12[1]), c12));
+                        } catch (NumberFormatException e) {
+                            playerList.add(new Player(p12[0] + ' ' + p12[1], Integer.parseInt(p12[2]), c12));
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            playerList.add(new Player(p13[0], Integer.parseInt(p13[1]), c13));
+                        } catch (NumberFormatException e) {
+                            playerList.add(new Player(p13[0] + ' ' + p13[1], Integer.parseInt(p13[2]), c13));
+                            e.printStackTrace();
+                        }
+
+                        try {
+                            playerList.add(new Player(p14[0], Integer.parseInt(p14[1]), c14));
+                        } catch (NumberFormatException e) {
+                            playerList.add(new Player(p14[0] + ' ' + p14[1], Integer.parseInt(p14[2]), c14));
+                            e.printStackTrace();
+                        }
                     }
 
                     playerList.sort(PlayerComparator);

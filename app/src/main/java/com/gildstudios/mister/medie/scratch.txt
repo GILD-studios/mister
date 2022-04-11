@@ -1,7 +1,7 @@
 Gucci 33
-Menga 27
+Menga 28
 Igor 21
-Flavio 32
+Flavio 31
 Matte Ciancio 32
 Rebbu 25
 Cianni 26
@@ -9,13 +9,14 @@ Morra 33
 Tommi 41
 Leo 40
 Carlo 43
+Albi 42
 Gian 46
 Ale Fasce 42
 Haza 27
-Daniel 34
+Daniel 35
 Damiano 32
+Savio 32
 Insi 20
 Pietro 30
 Jack 22
 Enrico 18
-

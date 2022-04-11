@@ -83,14 +83,14 @@
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Pietro 32"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName7"
@@ -98,14 +98,15 @@
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Marco 40"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
@@ -113,14 +114,15 @@
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Ciccio 27"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName9"
@@ -128,14 +130,15 @@
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Cristian 20"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName10"
@@ -143,14 +146,15 @@
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Jack 38"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName11"
@@ -158,14 +162,15 @@
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Alex 18"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName12"
@@ -173,14 +178,15 @@
         android:layout_height="39dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Leo 41"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName13"
@@ -189,13 +195,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="es. Vittorio 25"
         android:fontFamily="sans-serif-condensed"
+        android:hint="es. Vittorio 25"
 
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
@@ -203,14 +210,15 @@
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Gian 30"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -218,29 +226,31 @@
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:ems="10"
+
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Paolo 44 "
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="130dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:fontFamily="sans-serif-condensed"
-
         android:layout_marginTop="8dp"
+
         android:ems="10"
+        android:fontFamily="sans-serif-condensed"
         android:hint="es. Roberto 20"
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -249,13 +259,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="es. Andrea 12"
         android:fontFamily="sans-serif-condensed"
+        android:hint="es. Andrea 12"
 
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -264,13 +275,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="es. Daniele 45"
         android:fontFamily="sans-serif-condensed"
+        android:hint="es. Daniele 45"
 
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -279,13 +291,14 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="es. Federico 15"
         android:fontFamily="sans-serif-condensed"
+        android:hint="es. Federico 15"
 
         android:inputType="text"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName1" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName1"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView"
@@ -493,38 +506,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Calcio a 5"
             android:fontFamily="sans-serif-condensed"
+            android:text="Calcio a 5"
 
             app:layout_constraintEnd_toStartOf="@+id/calcio6"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/calcio6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Calcio a 6"
             android:fontFamily="sans-serif-condensed"
+            android:text="Calcio a 6"
 
             app:layout_constraintEnd_toStartOf="@+id/calcio7"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/calcio5"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <RadioButton
             android:id="@+id/calcio7"
-            android:fontFamily="sans-serif-condensed"
-
             android:layout_width="wrap_content"
+
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
             android:text="Calcio a 7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/calcio6"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
