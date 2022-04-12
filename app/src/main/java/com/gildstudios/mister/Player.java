@@ -51,6 +51,8 @@ public class Player implements Comparable<Player> {
             this.ruolo = "cen";
         else if (ruolo == 2)
             this.ruolo = "att";
+        else if (ruolo == 3)
+            this.ruolo = "por";
 
     }
 

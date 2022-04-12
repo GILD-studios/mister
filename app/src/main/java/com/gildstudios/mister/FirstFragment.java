@@ -55,7 +55,7 @@ public class FirstFragment extends Fragment {
         team1 = new ArrayList<>();
         team2 = new ArrayList<>();*/
 
-        int[] ruoli = new int[]{R.drawable.d, R.drawable.c, R.drawable.a};
+        int[] ruoli = new int[]{R.drawable.d, R.drawable.c, R.drawable.a, R.drawable.p};
 
         final Button calculate = view.findViewById(R.id.button_first2);
 
@@ -71,6 +71,10 @@ public class FirstFragment extends Fragment {
                 ruolo1.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c1++;
             } else if(c1 == 2){
+                ruolo1.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c1++;
+            }
+            else if(c1 == 3){
                 ruolo1.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c1 = 0;
             }
@@ -88,6 +92,10 @@ public class FirstFragment extends Fragment {
                 ruolo2.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c2++;
             } else  if(c2 == 2){
+                ruolo2.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c2++;
+            }
+            else if(c2 == 3){
                 ruolo2.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c2 = 0;
             }
@@ -105,6 +113,10 @@ public class FirstFragment extends Fragment {
                 ruolo3.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c3++;
             } else  if(c3 == 2){
+                ruolo3.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c3++;
+            }
+            else if(c3 == 3){
                 ruolo3.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c3 = 0;
             }
@@ -122,6 +134,10 @@ public class FirstFragment extends Fragment {
                 ruolo4.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c4++;
             } else  if(c4 == 2){
+                ruolo4.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c4++;
+            }
+            else if(c4 == 3){
                 ruolo4.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c4 = 0;
             }
@@ -139,6 +155,10 @@ public class FirstFragment extends Fragment {
                 ruolo5.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c5++;
             } else  if(c5 == 2){
+                ruolo5.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c5++;
+            }
+            else if(c5 == 3){
                 ruolo5.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c5 = 0;
             }
@@ -156,6 +176,10 @@ public class FirstFragment extends Fragment {
                 ruolo6.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c6++;
             } else  if(c6 == 2){
+                ruolo6.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c6++;
+            }
+            else if(c6 == 3){
                 ruolo6.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c6 = 0;
             }
@@ -173,6 +197,10 @@ public class FirstFragment extends Fragment {
                 ruolo7.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c7++;
             } else  if(c7 == 2){
+                ruolo7.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c7++;
+            }
+            else if(c7 == 3){
                 ruolo7.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c7 = 0;
             }
@@ -190,6 +218,10 @@ public class FirstFragment extends Fragment {
                 ruolo8.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c8++;
             } else  if(c8 == 2){
+                ruolo8.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c8++;
+            }
+            else if(c8 == 3){
                 ruolo8.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c8 = 0;
             }
@@ -207,6 +239,10 @@ public class FirstFragment extends Fragment {
                 ruolo9.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c9++;
             } else  if(c9 == 2){
+                ruolo9.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c9++;
+            }
+            else if(c9 == 3){
                 ruolo9.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c9 = 0;
             }
@@ -224,6 +260,10 @@ public class FirstFragment extends Fragment {
                 ruolo10.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c10++;
             } else  if(c10 == 2){
+                ruolo10.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c10++;
+            }
+            else if(c10 == 3){
                 ruolo10.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c10 = 0;
             }
@@ -241,6 +281,10 @@ public class FirstFragment extends Fragment {
                 ruolo11.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c11++;
             } else  if(c11 == 2){
+                ruolo11.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c11++;
+            }
+            else if(c11 == 3){
                 ruolo11.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c11 = 0;
             }
@@ -258,6 +302,10 @@ public class FirstFragment extends Fragment {
                 ruolo12.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
                 c12++;
             } else  if(c12 == 2){
+                ruolo12.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c12++;
+            }
+            else if(c12 == 3){
                 ruolo12.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c12 = 0;
             }
@@ -273,8 +321,12 @@ public class FirstFragment extends Fragment {
                 c13++;
             } else if(c13 == 1) {
                 ruolo13.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
-                c13 = 1;
+                c13++;
             } else  if(c13 == 2){
+                ruolo13.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c13++;
+            }
+            else if(c13 == 3){
                 ruolo13.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c13 = 0;
             }
@@ -287,11 +339,15 @@ public class FirstFragment extends Fragment {
         ruolo14.setOnClickListener(v -> {
             if(c14 == 0) {
                 ruolo14.setBackground(ContextCompat.getDrawable(getContext(), ruoli[1]));
-                c14 = 1;
+                c14++;
             } else if(c14 == 1) {
                 ruolo14.setBackground(ContextCompat.getDrawable(getContext(), ruoli[2]));
-                c14 = 2;
+                c14++;
             } else  if(c14 == 2){
+                ruolo14.setBackground(ContextCompat.getDrawable(getContext(), ruoli[3]));
+                c14++;
+            }
+            else if(c14 == 3){
                 ruolo14.setBackground(ContextCompat.getDrawable(getContext(), ruoli[0]));
                 c14 = 0;
             }
@@ -465,6 +521,10 @@ public class FirstFragment extends Fragment {
                         p14 = player14.getText().toString().split(" ");
                     }
 
+                    if (p1.length < 2 || p2.length < 2 || p3.length < 2 || p4.length < 2 || p5.length < 2 || p6.length < 2 || p7.length < 2 || p8.length < 2 || p9.length < 2 || p10.length < 2) {
+                        Toast.makeText(getContext(), "Assicurati di aver inserito i valori dei giocatori!", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
 
                     try {
                         playerList.add(new Player(p1[0], Integer.parseInt(p1[1]), c1));
@@ -627,12 +687,16 @@ public class FirstFragment extends Fragment {
                         int nAtt2 = 0;
                         int nCen2 = 0;
                         int nDif2 = 0;
+                        int nPor1 = 0;
+                        int nPor2 = 0;
 
                         for (Player p : team1) {
                             if (p.getRuolo().equals("att"))
                                 nAtt1++;
                             else if (p.getRuolo().equals("cen"))
                                 nCen1++;
+                            else if (p.getRuolo().equals("por"))
+                                nPor1++;
                             else
                                 nDif1++;
                         }
@@ -642,6 +706,8 @@ public class FirstFragment extends Fragment {
                                 nAtt2++;
                             else if (p.getRuolo().equals("cen"))
                                 nCen2++;
+                            else if (p.getRuolo().equals("por"))
+                                nPor2++;
                             else
                                 nDif2++;
                         }
@@ -653,16 +719,17 @@ public class FirstFragment extends Fragment {
                         boolean constraintAtt = (nAtt1 - nAtt2) <= 1 && (nAtt1 - nAtt2) >= -1;
                         boolean constraintCen = (nCen1 - nCen2) <= 1 && (nCen1 - nCen2) >= -1;
                         boolean constraintDif = (nDif1 - nDif2) <= 1 && (nDif1 - nDif2) >= -1;
+                        boolean constraintPor = (nPor1 - nPor2) <= 1 && (nPor1 - nPor2) >= -1;
                         boolean diff = (tot1 - tot2) <= tolleranza && (tot1 - tot2) >= -tolleranza;
 
-                        if (!fortiInsieme && !scarsiInsieme && constraintAtt && constraintCen && constraintDif && diff) {
+                        if (!fortiInsieme && !scarsiInsieme && constraintAtt && constraintCen && constraintDif && constraintPor && diff) {
                             tentativi = (tolleranza) * 1000 - (1000 - count);
                             Log.v("risultato", "squadra 2: " + tot2 + ", squadra 1: " + tot1 + "; differenza: " + (tot2 - tot1) + ", numero tentativi: " + tentativi);
                             break;
                         }
 
                         if (tolleranza > 10) {
-                            Toast.makeText(getContext(), "Non sono riuscito a creare squadre abbastanza equilibrate ;(", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), "Non sono riuscito a creare squadre abbastanza equilibrate, prova a cambiare leggermente qualche valore", Toast.LENGTH_SHORT).show();
                             break;
                         }
 
@@ -683,6 +750,9 @@ public class FirstFragment extends Fragment {
 
                         player1.setText(team1.get(0).getName() + " " + team1.get(0).getOverall());
                         switch (team1.get(0).getRuolo()) {
+                            case "por":
+                                c1 = 3;
+                                break;
                             case "att":
                                 c1 = 2;
                                 break;
@@ -697,6 +767,9 @@ public class FirstFragment extends Fragment {
 
                         player2.setText(team1.get(1).getName() + " " + team1.get(1).getOverall());
                         switch (team1.get(1).getRuolo()) {
+                            case "por":
+                                c2 = 3;
+                                break;
                             case "att":
                                 c2 = 2;
                                 break;
@@ -711,6 +784,9 @@ public class FirstFragment extends Fragment {
 
                         player3.setText(team1.get(2).getName() + " " + team1.get(2).getOverall());
                         switch (team1.get(2).getRuolo()) {
+                            case "por":
+                                c3 = 3;
+                                break;
                             case "att":
                                 c3 = 2;
                                 break;
@@ -725,6 +801,9 @@ public class FirstFragment extends Fragment {
 
                         player4.setText(team1.get(3).getName() + " " + team1.get(3).getOverall());
                         switch (team1.get(3).getRuolo()) {
+                            case "por":
+                                c4 = 3;
+                                break;
                             case "att":
                                 c4 = 2;
                                 break;
@@ -739,6 +818,9 @@ public class FirstFragment extends Fragment {
 
                         player5.setText(team1.get(4).getName() + " " + team1.get(4).getOverall());
                         switch (team1.get(4).getRuolo()) {
+                            case "por":
+                                c5 = 3;
+                                break;
                             case "att":
                                 c5 = 2;
                                 break;
@@ -753,6 +835,9 @@ public class FirstFragment extends Fragment {
 
                         player6.setText(team2.get(0).getName() + " " + team2.get(0).getOverall());
                         switch (team2.get(0).getRuolo()) {
+                            case "por":
+                                c6 = 3;
+                                break;
                             case "att":
                                 c6 = 2;
                                 break;
@@ -767,6 +852,9 @@ public class FirstFragment extends Fragment {
 
                         player7.setText(team2.get(1).getName() + " " + team2.get(1).getOverall());
                         switch (team2.get(1).getRuolo()) {
+                            case "por":
+                                c7 = 3;
+                                break;
                             case "att":
                                 c7 = 2;
                                 break;
@@ -781,6 +869,9 @@ public class FirstFragment extends Fragment {
 
                         player8.setText(team2.get(2).getName() + " " + team2.get(2).getOverall());
                         switch (team2.get(2).getRuolo()) {
+                            case "por":
+                                c8 = 3;
+                                break;
                             case "att":
                                 c8 = 2;
                                 break;
@@ -795,6 +886,9 @@ public class FirstFragment extends Fragment {
 
                         player9.setText(team2.get(3).getName() + " " + team2.get(3).getOverall());
                         switch (team2.get(3).getRuolo()) {
+                            case "por":
+                                c9 = 3;
+                                break;
                             case "att":
                                 c9 = 2;
                                 break;
@@ -809,6 +903,9 @@ public class FirstFragment extends Fragment {
 
                         player10.setText(team2.get(4).getName() + " " + team2.get(4).getOverall());
                         switch (team2.get(4).getRuolo()) {
+                            case "por":
+                                c10 = 3;
+                                break;
                             case "att":
                                 c10 = 2;
                                 break;
@@ -824,6 +921,9 @@ public class FirstFragment extends Fragment {
                         if (calcio6.isChecked()) {
                             player11.setText(team1.get(5).getName() + " " + team1.get(5).getOverall());
                             switch (team1.get(5).getRuolo()) {
+                                case "por":
+                                    c11 = 3;
+                                    break;
                                 case "att":
                                     c11 = 2;
                                     break;
@@ -838,6 +938,9 @@ public class FirstFragment extends Fragment {
 
                             player12.setText(team2.get(5).getName() + " " + team2.get(5).getOverall());
                             switch (team2.get(5).getRuolo()) {
+                                case "por":
+                                    c12 = 3;
+                                    break;
                                 case "att":
                                     c12 = 2;
                                     break;
@@ -854,6 +957,9 @@ public class FirstFragment extends Fragment {
                         if (calcio7.isChecked()) {
                             player11.setText(team1.get(5).getName() + " " + team1.get(5).getOverall());
                             switch (team1.get(5).getRuolo()) {
+                                case "por":
+                                    c11 = 3;
+                                    break;
                                 case "att":
                                     c11 = 2;
                                     break;
@@ -868,6 +974,9 @@ public class FirstFragment extends Fragment {
 
                             player12.setText(team2.get(5).getName() + " " + team2.get(5).getOverall());
                             switch (team2.get(5).getRuolo()) {
+                                case "por":
+                                    c12 = 3;
+                                    break;
                                 case "att":
                                     c12 = 2;
                                     break;
@@ -882,6 +991,9 @@ public class FirstFragment extends Fragment {
 
                             player13.setText(team1.get(6).getName() + " " + team1.get(6).getOverall());
                             switch (team1.get(6).getRuolo()) {
+                                case "por":
+                                    c13 = 3;
+                                    break;
                                 case "att":
                                     c13 = 2;
                                     break;
@@ -896,6 +1008,9 @@ public class FirstFragment extends Fragment {
 
                             player14.setText(team2.get(6).getName() + " " + team2.get(6).getOverall());
                             switch (team2.get(6).getRuolo()) {
+                                case "por":
+                                    c14 = 3;
+                                    break;
                                 case "att":
                                     c14 = 2;
                                     break;
