@@ -1,12 +1,24 @@
 <resources>
-    <string name="app_name">Mister</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings" translatable="false">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="app_name">Coach</string>
+
+    <string name="intro_message">Hey Coach! Enter the name of your players followed by a skill value from 0 to 50, then you can change the role of each of them by tapping on it. I will help you form two balanced teams! (P = GK) </string>
+    <string name="nome_valore">Name Value</string>
+    <string name="calcio_a_5">5-a-side</string>
+    <string name="calcio_a_6">6-a-side</string>
+    <string name="calcio_a_7">7-a-side</string>
+    <string name="calcola_squadre">GENERATE TEAMS</string>
+    <string name="ruolo">Role</string>
+    <string name="fail_non_equilibrate">I was not able to create teams that are balanced enough, try to change some values slightly</string>
+    <string name="fail_missing_name">Make sure you have entered correct player values!</string>
+    <string name="missing_fields">Missing fields!</string>
+
 </resources>

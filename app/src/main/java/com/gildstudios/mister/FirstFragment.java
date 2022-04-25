@@ -486,11 +486,11 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if ((player1.getText().toString().isEmpty() || player2.getText().toString().isEmpty() || player3.getText().toString().isEmpty() || player4.getText().toString().isEmpty() || player5.getText().toString().isEmpty() || player6.getText().toString().isEmpty() || player7.getText().toString().isEmpty() || player8.getText().toString().isEmpty() || player9.getText().toString().isEmpty() || player10.getText().toString().isEmpty())) {
-                    Toast.makeText(getContext(), "Compila tutti i campi!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.missing_fields, Toast.LENGTH_SHORT).show();
                 } else if(format == 6 && (player11.getText().toString().isEmpty() || player12.getText().toString().isEmpty())) {
-                        Toast.makeText(getContext(), "Compila tutti i campi!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.missing_fields, Toast.LENGTH_SHORT).show();
                 } else if (format == 7 && (player11.getText().toString().isEmpty() || player12.getText().toString().isEmpty() || player13.getText().toString().isEmpty() || player14.getText().toString().isEmpty())) {
-                        Toast.makeText(getContext(), "Compila tutti i campi!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.missing_fields, Toast.LENGTH_SHORT).show();
                 } else {
                     team1.clear();
                     team2.clear();
@@ -522,7 +522,7 @@ public class FirstFragment extends Fragment {
                     }
 
                     if (p1.length < 2 || p2.length < 2 || p3.length < 2 || p4.length < 2 || p5.length < 2 || p6.length < 2 || p7.length < 2 || p8.length < 2 || p9.length < 2 || p10.length < 2) {
-                        Toast.makeText(getContext(), "Assicurati di aver inserito i valori dei giocatori!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), R.string.fail_missing_name, Toast.LENGTH_SHORT).show();
                         return;
                     }
 
@@ -729,7 +729,7 @@ public class FirstFragment extends Fragment {
                         }
 
                         if (tolleranza > 10) {
-                            Toast.makeText(getContext(), "Non sono riuscito a creare squadre abbastanza equilibrate, prova a cambiare leggermente qualche valore", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getContext(), R.string.fail_non_equilibrate, Toast.LENGTH_SHORT).show();
                             break;
                         }
 

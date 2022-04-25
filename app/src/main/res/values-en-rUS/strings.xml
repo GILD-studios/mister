@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coach</string>
+
+    <string name="intro_message">Hey Coach! Enter the name of your players followed by a skill value from 0 to 50, then you can change the role of each of them by tapping on it. I will help you form two balanced teams! (P = GK) </string>
+    <string name="nome_valore">Name Value</string>
+    <string name="calcio_a_5">5-a-side</string>
+    <string name="calcio_a_6">6-a-side</string>
+    <string name="calcio_a_7">7-a-side</string>
+    <string name="calcola_squadre">GENERATE TEAMS</string>
+    <string name="ruolo">Role</string>
+    <string name="fail_non_equilibrate">I was not able to create teams that are balanced enough, try to change some values slightly</string>
+    <string name="fail_missing_name">Make sure you have entered correct player values!</string>
+    <string name="missing_fields">Missing fields!</string>
+</resources>

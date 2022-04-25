@@ -68,7 +68,7 @@
         android:fontFamily="sans-serif-condensed"
         android:shadowColor="@android:color/black"
         android:shadowRadius="0"
-        android:text="CALCOLA SQUADRE"
+        android:text="@string/calcola_squadre"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -308,7 +308,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Ehi Mister! Inserisci il nome dei tuoi giocatori seguito da un valore di forza da 0 a 50, dopodichè puoi modificare il ruolo di ognuno di loro toccandolo. Ti aiuterò a formare due squadre equilibrate!"
+        android:text="@string/intro_message"
         android:textAlignment="viewStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -507,7 +507,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:fontFamily="sans-serif-condensed"
-            android:text="Calcio a 5"
+            android:text="@string/calcio_a_5"
 
             app:layout_constraintEnd_toStartOf="@+id/calcio6"
             app:layout_constraintHorizontal_bias="0.5"
@@ -521,7 +521,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:fontFamily="sans-serif-condensed"
-            android:text="Calcio a 6"
+            android:text="@string/calcio_a_6"
 
             app:layout_constraintEnd_toStartOf="@+id/calcio7"
             app:layout_constraintHorizontal_bias="0.5"
@@ -535,7 +535,7 @@
 
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
-            android:text="Calcio a 7"
+            android:text="@string/calcio_a_7"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/calcio6"
@@ -549,7 +549,7 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ruolo"
+        android:text="@string/ruolo"
         android:fontFamily="sans-serif-condensed"
 
         app:layout_constraintBottom_toBottomOf="@+id/textView21"
@@ -561,7 +561,7 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ruolo"
+        android:text="@string/ruolo"
         android:fontFamily="sans-serif-condensed"
 
         app:layout_constraintBottom_toBottomOf="@+id/textView22"
@@ -576,7 +576,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Nome Valore"
+        android:text="@string/nome_valore"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
@@ -586,7 +586,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:text="Nome Valore"
+        android:text="@string/nome_valore"
         android:fontFamily="sans-serif-condensed"
 
         app:layout_constraintEnd_toEndOf="parent"

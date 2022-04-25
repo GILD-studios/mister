@@ -1,17 +1,30 @@
 package com.gildstudios.mister;
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import static com.gildstudios.mister.FirstFragment.team1;
 import static com.gildstudios.mister.FirstFragment.team2;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
 
 public class SecondFragment extends Fragment {
 
@@ -24,11 +37,18 @@ public class SecondFragment extends Fragment {
         return inflater.inflate(R.layout.formation, container, false);
     }
 
+
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        /*Button share = view.findViewById(R.id.buttonshare);
+        share.setOnClickListener(v -> {
+            screenshot();
+        });*/
+
         team1.sort(new Player.PlayerRoleComparator());
         team2.sort(new Player.PlayerRoleComparator());
+
 
         final TextView p1 = view.findViewById(R.id.textView2);
         final TextView p2 = view.findViewById(R.id.textView3);
@@ -69,7 +89,7 @@ public class SecondFragment extends Fragment {
         p10.setText(team2.get(2).getName());
         p11.setText(team2.get(1).getName());
         p12.setText(team2.get(0).getName());
-        if(FirstFragment.format == 6) {
+        if (FirstFragment.format == 6) {
             p1.setText(team1.get(5).getName());
             p7.setText(team2.get(5).getName());
             p1.setVisibility(View.VISIBLE);
@@ -93,4 +113,36 @@ public class SecondFragment extends Fragment {
         }
 
     }
+
+    /*public void screenshot() {
+        Date date = new Date();
+        CharSequence now = android.text.format.DateFormat.format("yyyy-MM-dd_hh:mm:ss", date);
+        String filename = Environment.getExternalStorageDirectory() + "/Mister/" + now + ".jpg";
+
+        View root = MainActivity.RV;
+        root.setDrawingCacheEnabled(true);
+        Bitmap bitmap = Bitmap.createBitmap(root.getDrawingCache());
+        root.setDrawingCacheEnabled(false);
+
+        File file = new File(filename);
+        file.getParentFile().mkdirs();
+
+        try{
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fileOutputStream);
+            fileOutputStream.flush();
+            fileOutputStream.close();
+
+            Uri uri = Uri.fromFile(file);
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_SEND);
+            intent.setDataAndType(uri, "image/*");
+            startActivity(intent);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }*/
 }
+

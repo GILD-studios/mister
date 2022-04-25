@@ -1,5 +1,8 @@
 package com.gildstudios.mister;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -7,19 +10,33 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.Environment;
 import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static View RV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
+        RV = rootView;
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setVisibility(View.GONE);
@@ -30,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+
     }
 
     @Override
@@ -53,4 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

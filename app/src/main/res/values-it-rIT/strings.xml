@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mister</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="intro_message">Ehi Mister! Inserisci il nome dei tuoi giocatori seguito da un valore di forza da 0 a 50, dopodichè puoi modificare il ruolo di ognuno di loro toccandolo. Ti aiuterò a formare due squadre equilibrate!</string>
+    <string name="nome_valore">Nome Valore</string>
+    <string name="calcio_a_5">Calcio a 5</string>
+    <string name="calcio_a_6">Calcio a 6</string>
+    <string name="calcio_a_7">Calcio a 7</string>
+    <string name="calcola_squadre">CALCOLA SQUADRE</string>
+    <string name="ruolo">Ruolo</string>
+    <string name="fail_non_equilibrate">Non sono riuscito a creare squadre abbastanza equilibrate, prova a cambiare leggermente qualche valore</string>
+    <string name="fail_missing_name">Assicurati di aver inserito i valori dei giocatori!</string>
+    <string name="missing_fields">Compila tutti i campi!</string>
+</resources>
