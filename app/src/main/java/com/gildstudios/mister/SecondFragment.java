@@ -181,7 +181,7 @@ public class SecondFragment extends AwareFragment {
 
         fragmentView.setDrawingCacheEnabled(false);
 
-        //fragmentView.destroyDrawingCache();
+        fragmentView.destroyDrawingCache();
 
         return viewBitmap;
     }
