@@ -21,4 +21,7 @@
     <string name="fail_non_equilibrate">Non sono riuscito a creare squadre abbastanza equilibrate, prova a cambiare leggermente qualche valore</string>
     <string name="fail_missing_name">Assicurati di aver inserito i valori dei giocatori!</string>
     <string name="missing_fields">Compila tutti i campi!</string>
+    <string name="send_to">Condividi con...</string>
+    <string name="share_message">Guarda i team che ho appena creato su </string>
+    <string name="extra_subject">Squadre per la partita</string>
 </resources>

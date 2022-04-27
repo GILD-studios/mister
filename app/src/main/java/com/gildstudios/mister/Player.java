@@ -45,6 +45,12 @@ public class Player implements Comparable<Player> {
     public Player(String name, int overall, int ruolo) {
         this.name = name;
         this.overall = overall;
+
+        if(overall > 50)
+            this.overall = 50;
+        else if (overall < 1)
+            this.overall = 1;
+
         if(ruolo == 0)
             this.ruolo = "dif";
         else if (ruolo == 1)

@@ -26,10 +26,13 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity {
 
     public static View RV;
+    private static MainActivity sInstance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        sInstance = this;
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -46,10 +49,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
             }
+
         });
 
+    }
 
-
+    public static synchronized MainActivity getInstance() {
+        return sInstance;
     }
 
     @Override
