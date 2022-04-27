@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Coach</string>
+    <string name="app_name">Football Team Maker</string>
 
     <string name="intro_message">Hey Coach! Enter the name of your players followed by a skill value from 0 to 50, then you can change the role of each of them by tapping on it. I will help you form two balanced teams! (P = GK) </string>
     <string name="nome_valore">Name Value</string>

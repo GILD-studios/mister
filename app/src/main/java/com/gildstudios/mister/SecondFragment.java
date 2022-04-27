@@ -270,7 +270,7 @@ public class SecondFragment extends AwareFragment {
         shareIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
         String shareBody = getString(R.string.share_message)
-                + ' ' + getString(R.string.app_name) + ": " + getString(R.string.play_store_link);
+                + ' ' + getString(R.string.app_name) + " ⚽: " + getString(R.string.play_store_link);
 
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.extra_subject));
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
