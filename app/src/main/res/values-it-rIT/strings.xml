@@ -12,7 +12,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="intro_message">Ehi Mister! Inserisci il nome dei tuoi giocatori seguito da un valore di forza da 0 a 50, dopodichè puoi modificare il ruolo di ognuno di loro toccandolo. Ti aiuterò a formare due squadre equilibrate!</string>
-    <string name="nome_valore">Nome Valore</string>
+    <string name="nome_valore">Nome e Valore</string>
     <string name="calcio_a_5">Calcio a 5</string>
     <string name="calcio_a_6">Calcio a 6</string>
     <string name="calcio_a_7">Calcio a 7</string>

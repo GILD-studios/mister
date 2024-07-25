@@ -39,6 +39,7 @@ public class SecondFragment extends AwareFragment {
     private final int RC_sharing = 532;
     private ContextWrapper mCw;
     private File mBitmapFh;
+    ImageView shareImage;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,7 +68,7 @@ public class SecondFragment extends AwareFragment {
         team1.sort(new Player.PlayerRoleComparator());
         team2.sort(new Player.PlayerRoleComparator());
 
-        ImageView shareImage = view.findViewById(R.id.shareImage);
+        shareImage = view.findViewById(R.id.shareImage);
 
         final TextView p1 = view.findViewById(R.id.textView2);
         final TextView p2 = view.findViewById(R.id.textView3);
@@ -231,6 +232,7 @@ public class SecondFragment extends AwareFragment {
     }
 
     private void shareTeams() {
+        shareImage.setVisibility(View.INVISIBLE);
         Bitmap viewBitmap = takeScreenshot();
 
         if (viewBitmap == null) {
@@ -280,6 +282,9 @@ public class SecondFragment extends AwareFragment {
 
         startActivityForResult(Intent.createChooser(shareIntent,
                 getResources().getText(R.string.send_to)), RC_sharing);
+
+        shareImage.setVisibility(View.VISIBLE);
     }
+
 }
 

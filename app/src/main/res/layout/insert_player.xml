@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
     <ImageView
         android:id="@+id/ruolo3"
@@ -49,10 +50,10 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
-        android:text="Squadra 2"
         android:fontFamily="sans-serif-condensed"
+        android:text="Squadra 2"
 
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +63,7 @@
         android:id="@+id/button_first2"
         android:layout_width="190dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/gradientbutton"
         android:elevation="8dp"
         android:fontFamily="sans-serif-condensed"
@@ -96,7 +97,6 @@
         android:id="@+id/editTextTextPersonName7"
         android:layout_width="130dp"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
 
@@ -104,15 +104,15 @@
         android:hint="es. Marco 40"
         android:inputType="text"
         android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
         android:layout_width="130dp"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
 
@@ -128,7 +128,7 @@
         android:id="@+id/editTextTextPersonName9"
         android:layout_width="130dp"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
 
@@ -144,7 +144,7 @@
         android:id="@+id/editTextTextPersonName10"
         android:layout_width="130dp"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
 
@@ -160,7 +160,7 @@
         android:id="@+id/editTextTextPersonName11"
         android:layout_width="130dp"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
 
@@ -176,7 +176,7 @@
         android:id="@+id/editTextTextPersonName12"
         android:layout_width="130dp"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
 
@@ -192,7 +192,7 @@
         android:id="@+id/editTextTextPersonName13"
         android:layout_width="130dp"
         android:layout_height="39dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
@@ -209,7 +209,7 @@
         android:layout_width="130dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
 
         android:fontFamily="sans-serif-condensed"
@@ -225,7 +225,7 @@
         android:layout_width="130dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
 
         android:fontFamily="sans-serif-condensed"
@@ -241,7 +241,7 @@
         android:layout_width="130dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
 
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
@@ -257,7 +257,7 @@
         android:layout_width="130dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
         android:hint="es. Andrea 12"
@@ -273,7 +273,7 @@
         android:layout_width="130dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
         android:hint="es. Daniele 45"
@@ -289,7 +289,7 @@
         android:layout_width="130dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
         android:hint="es. Federico 15"
@@ -305,7 +305,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/intro_message"
@@ -313,7 +313,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
     <SeekBar
         android:id="@+id/seekBar"
@@ -331,8 +331,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Tolleranza"
         android:fontFamily="sans-serif-condensed"
+        android:text="Tolleranza"
 
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -346,8 +346,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
         android:layout_marginTop="8dp"
-        android:text="1"
         android:fontFamily="sans-serif-condensed"
+        android:text="1"
 
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
@@ -359,8 +359,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="56dp"
-        android:text="10"
         android:fontFamily="sans-serif-condensed"
+        android:text="10"
 
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
@@ -371,9 +371,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:text="Squadra 1"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-condensed"
+        android:text="Squadra 1"
 
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
@@ -495,7 +495,7 @@
         android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -549,8 +549,8 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ruolo"
         android:fontFamily="sans-serif-condensed"
+        android:text="@string/ruolo"
 
         app:layout_constraintBottom_toBottomOf="@+id/textView21"
         app:layout_constraintEnd_toEndOf="@+id/ruolo1"
@@ -561,8 +561,8 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ruolo"
         android:fontFamily="sans-serif-condensed"
+        android:text="@string/ruolo"
 
         app:layout_constraintBottom_toBottomOf="@+id/textView22"
         app:layout_constraintEnd_toEndOf="@+id/ruolo7"
@@ -574,7 +574,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-condensed"
         android:text="@string/nome_valore"
         app:layout_constraintStart_toStartOf="parent"
@@ -584,13 +584,23 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
-        android:text="@string/nome_valore"
         android:fontFamily="sans-serif-condensed"
+        android:text="@string/nome_valore"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="141dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appstore" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
